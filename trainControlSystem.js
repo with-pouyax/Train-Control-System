@@ -36,19 +36,19 @@ class HighSpeedTrain extends Train {
 }
 
 var myFirstTrain = new Train('red', false);
-console.log(myFirstTrain); // Train {color: 'red', lightsOn: false}
+console.log(myFirstTrain); 
 var mySecondTrain = new Train('blue', false);
 var myThirdTrain = new Train('blue', false);
 
 var train4 = new Train('red', false);
-train4.toggleLights(); // undefined
-train4.lightsStatus(); // Lights on? true
-train4.getSelf(); // Train {color: 'red', lightsOn: true}
-train4.getPrototype(); // {constructor: f, toggleLights: f, ligthsStatus: f, getSelf: f, getPrototype: f}
+train4.toggleLights(); 
+train4.lightsStatus(); 
+train4.getSelf(); 
+train4.getPrototype(); // {constructor: f, toggleLights: f, ligthsStatus: f, getSelf: f, getPrototype: f} why is it not working ?
 
 var train5 = new Train('blue', false);
 var highSpeed1 = new HighSpeedTrain(200, false, 'green', false);
 
-train5.toggleLights(); // undefined
-train5.lightsStatus(); // Lights on? true
-highSpeed1.toggleLights(); // Lights on? true, Lights are 100% operational.
+train5.toggleLights(); 
+train5.lightsStatus(); 
+highSpeed1.toggleLights(); 
